@@ -21,7 +21,7 @@
                 </a>
             </li>
             <li>
-                <a href="{{ url('discuss') }}">
+                <a href="{{ url('posts') }}">
                     <i class="ti-comments"></i>
                     <p>Discuss</p>
                 </a>

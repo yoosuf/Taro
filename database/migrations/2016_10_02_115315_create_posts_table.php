@@ -15,8 +15,7 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('discuss_id')->unsigned();
-            $table->foreign('discuss_id')->references('id')->on('discusses');
+
             $table->string('title');
             $table->text('content');
             $table->timestamps();
