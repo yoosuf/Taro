@@ -1,5 +1,7 @@
 # Taro Project
 
+[![Build Status](https://travis-ci.org/finetick/Taro.svg?branch=master)](https://travis-ci.org/finetick/Taro)
+
 Taro is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
 
 ## Official Documentation

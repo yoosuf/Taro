@@ -1,6 +1,6 @@
 const elixir = require('laravel-elixir');
 
-require('laravel-elixir-vue');
+require('laravel-elixir-vue-2');
 
 /*
  |--------------------------------------------------------------------------
@@ -18,5 +18,6 @@ elixir(mix => {
        .webpack('app.js');
 
     mix.copy('resources/assets/fonts', 'public/fonts');
+
 
 });

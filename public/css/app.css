@@ -8452,6 +8452,19 @@ textarea.form-control {
     -ms-overflow-style: -ms-autohiding-scrollbar;
     -webkit-overflow-scrolling: touch; } }
 
+.main-panel {
+  min-height: 100%;
+  position: relative; }
+
+.content {
+  padding-bottom: 74px; }
+
+.footer {
+  color: #444;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
 @font-face {
   font-family: 'themify';
   src: url("../fonts/themify.eot?-fvbane");

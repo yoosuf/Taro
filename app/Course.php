@@ -20,4 +20,13 @@ class Course extends Model
     {
     	return $this->hasMany(Lesson::class);
     }
+
+
+    /**
+     * Get all of the tags for the Courses.
+     */
+    public function tags()
+    {
+        return $this->morphToMany(Tag::class, 'taggable');
+    }
 }
