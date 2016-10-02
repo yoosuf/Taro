@@ -19,3 +19,7 @@ Auth::routes();
 
 
 Route::get('/home', 'HomeController@index');
+
+
+Route::resource('courses', 'CoursesController');
+Route::resource('discuss', 'DiscussController');
