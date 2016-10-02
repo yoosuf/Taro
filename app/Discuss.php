@@ -11,4 +11,14 @@ class Discuss extends Model
     {
         return $this->hasMany(Post::class);
     }
+
+
+
+    /**
+     * Get all of the tags for the Discussion.
+     */
+    public function tags()
+    {
+        return $this->morphToMany(Tag::class, 'taggable');
+    }
 }
