@@ -11,19 +11,17 @@ class DiscussController extends Controller
 {
 
 
-    public function index()
+
+    public function store(Request $request)
     {
-
-        $discusses = Discuss::all();
-        return view('discuss.index', compact('discusses'));
-
 
     }
 
 
-    public function show($id)
+    public function update(Request $request, $id)
     {
-        $discuss = Discuss::find($id);
-        return view('discuss.show', compact('discuss'));
+
     }
+
+
 }

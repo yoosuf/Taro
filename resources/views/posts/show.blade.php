@@ -14,9 +14,9 @@
                             <div class="row">
 
                                 <div class="col-xs-12">
-                                    <div class="numbers pull-left">
                                         {{ $discuss->title }}
-                                    </div>
+                                    <br>
+                                        {{ $discuss->content }}
                                 </div>
                             </div>
                         </div>
@@ -25,7 +25,6 @@
                         <div class="card-footer">
                             <hr>
                             <div class="footer-title">
-                                {{ count($discuss->posts) }}
                             </div>
                         </div>
 
@@ -43,15 +42,13 @@
 
             <div class="row">
 
-                @foreach($discuss->posts as $lesson)
+                @foreach($discuss->discussions as $lesson)
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="content">
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <div class="numbers pull-left">
-                                        {{ $lesson->title }}
-                                    </div>
+                                        {{ $lesson->content }}
                                 </div>
                             </div>
                         </div>
