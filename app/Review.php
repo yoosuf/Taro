@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Lesson extends Model
+class Review extends Model
 {
 
     /**
@@ -17,14 +17,8 @@ class Lesson extends Model
     ];
 
 
-    public function course()
+    public function lesson()
     {
-        return $this->belongsTo(Course::class);
-    }
-
-
-    public function reviews()
-    {
-        return $this->hasMany(Review::class);
+        return $this->hasOne(Lesson::class);
     }
 }
