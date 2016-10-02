@@ -7,18 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 class Discuss extends Model
 {
 
-    public function posts()
+
+
+
+    public function post()
     {
-        return $this->hasMany(Post::class);
+        return $this->belongsTo(Post::class);
     }
 
 
-
-    /**
-     * Get all of the tags for the Discussion.
-     */
-    public function tags()
-    {
-        return $this->morphToMany(Tag::class, 'taggable');
-    }
 }
