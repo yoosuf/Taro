@@ -15,13 +15,13 @@
             </li>
 
             <li>
-                <a href="#">
+                <a href="{{ url('courses') }}">
                     <i class="ti-layout-list-post"></i>
                     <p>Course</p>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="{{ url('discuss') }}">
                     <i class="ti-comments"></i>
                     <p>Discuss</p>
                 </a>
